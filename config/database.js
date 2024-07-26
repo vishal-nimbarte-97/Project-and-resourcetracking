@@ -4,7 +4,7 @@ const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize('PAR', 'postgres', '2001', {
   host: 'localhost',
   dialect: 'postgres',
-  // logging: false, // Set to `true` to see SQL queries in the console
+  logging: false, // Set to `true` to see SQL queries in the console
 });
 
 // Function to authenticate the connection
