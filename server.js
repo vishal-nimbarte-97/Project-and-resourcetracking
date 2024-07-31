@@ -13,6 +13,7 @@ const projectRoutes = require('./routes/projectRoutes');
 const projectResourceMappingRoutes = require('./routes/projectResourceMappingRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 const projectDocumentRoutes = require('./routes/projectDocumentRoutes'); 
+const clientDetailsRoutes = require('./routes/clientDetailsRoutes');
 
 // Use routes
 app.use('/users', userRoutes); // Add this line for the user module
@@ -20,6 +21,7 @@ app.use('/projects', projectRoutes);
 app.use('/project_resource_mappings', projectResourceMappingRoutes);
 app.use('/tasks', taskRoutes); 
 app.use('/project_documents', projectDocumentRoutes); 
+app.use('/clients', clientDetailsRoutes);
 
 // Synchronize all models
 const syncDatabase = async () => {
