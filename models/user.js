@@ -14,7 +14,7 @@ const User = sequelize.define('User', {
   mobilenumber: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true, // Ensures that the mobilenumber is unique
+    // unique: true, // Ensures that the mobilenumber is unique
   },
   email: {
     type: DataTypes.STRING,
@@ -23,6 +23,10 @@ const User = sequelize.define('User', {
     validate: {
       isEmail: true, // Validates that the email format is correct
     }
+  },
+  password: {
+    type: DataTypes.STRING,
+    allowNull: false, // Ensures that the password cannot be null
   }
 }, {
   tableName: 'users',
