@@ -34,3 +34,4 @@ Project.hasMany(ProjectDocument, { foreignKey: 'projectId' });
 ProjectDocument.belongsTo(Project, { foreignKey: 'projectId' });
 
 module.exports = ProjectDocument;
+
